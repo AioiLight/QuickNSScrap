@@ -34,6 +34,7 @@ class TitleDatabase(private val context: Context) {
         context.openFileOutput(DB_FILE, Context.MODE_PRIVATE).bufferedWriter().use { out ->
             JsonReader(conn.getInputStream().bufferedReader()).use { reader ->
                 JsonWriter(out).use { writer ->
+                    val seen = HashSet<String>()
                     writer.beginObject()
                     reader.beginObject()
                     while (reader.hasNext()) {
@@ -51,9 +52,10 @@ class TitleDatabase(private val context: Context) {
                             }
                         }
                         reader.endObject()
-                        val validId = id?.takeIf { it.isNotBlank() } ?: continue
+                        val validId = id?.takeIf { it.isNotBlank() }?.uppercase() ?: continue
                         val validName = name?.takeIf { it.isNotBlank() } ?: continue
-                        writer.name(validId.uppercase())
+                        if (!seen.add(validId)) continue
+                        writer.name(validId)
                         writer.beginObject()
                         writer.name("name").value(validName)
                         writer.name("nsuId").value(nsuId)
@@ -89,7 +91,7 @@ class TitleDatabase(private val context: Context) {
                     val entry = obj.optJSONObject(key) ?: continue
                     val name = entry.optString("name").takeIf { it.isNotBlank() } ?: continue
                     val nsuId = entry.optLong("nsuId")
-                    result[key] = TitleEntry(name = name, nsuId = nsuId)
+                    result.putIfAbsent(key, TitleEntry(name = name, nsuId = nsuId))
                 }
                 result.also { cache = it }
             } catch (_: Exception) {
