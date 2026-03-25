@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name" translatable="false">QuickNSScrap</string>
+
+    <!-- Wi-Fi connection -->
+    <string name="wifi_connect_failed">Could not connect to Wi-Fi</string>
+    <string name="connection_lost">Connection lost</string>
+    <string name="connecting_to">Connecting to \"%1$s\"…</string>
+
+    <!-- Error common -->
+    <string name="error_title">Error</string>
+    <string name="retry">Retry</string>
+
+    <!-- QR scanner screen -->
+    <string name="scan_qr_prompt">Scan the Nintendo Switch QR code</string>
+    <string name="camera_permission_required">Camera permission is required</string>
+    <string name="grant_permission">Allow</string>
+    <string name="settings">Settings</string>
+
+    <!-- Transfer screen -->
+    <string name="fetch_file_list_failed">Failed to fetch file list: %1$s</string>
+    <string name="fetching_file_list">Fetching file list…</string>
+    <string name="file_count_video">%1$d video(s)</string>
+    <string name="file_count_image">%1$d image(s)</string>
+    <string name="download_all">Download All</string>
+    <string name="back">Back</string>
+    <string name="downloading_progress">Downloading (%1$d / %2$d)</string>
+    <string name="total_progress">Total: %1$d / %2$d</string>
+    <string name="done_title">Done</string>
+    <string name="saved_count">Saved %1$d file(s)</string>
+    <string name="close">Close</string>
+
+    <!-- Settings screen -->
+    <string name="save_location">Save Location</string>
+    <string name="organize_by_game">Organize by Game</string>
+    <string name="organize_by_game_description">Creates a folder for each game title.</string>
+    <string name="strip_id_from_filename">Remove game ID from filename</string>
+    <string name="strip_id_from_filename_description">If the game title is in the database, the game ID is removed from the beginning of the filename.</string>
+    <string name="game_database">Game Database</string>
+    <string name="last_updated">Last updated: %1$s</string>
+    <string name="not_downloaded">Not downloaded</string>
+    <string name="download_failed">Download failed: %1$s</string>
+    <string name="download_database">Download Database</string>
+    <string name="db_language">Database Language</string>
+    <string name="db_language_ja">日本語</string>
+    <string name="db_language_en">English</string>
+    <string name="game_db_help">• You need to download the database in advance to convert game IDs to names.\n• If a new game is not organized into a folder, please download the database again.\n• Titles not in the database will be saved without a folder.\n• The database is large; downloading over Wi-Fi is recommended.</string>
+    <string name="failed_count">Failed: %1$d file(s)</string>
+    <string name="settings_save_failed">Failed to save settings</string>
+
+    <!-- VPN warning -->
+    <string name="vpn_warning">If you are using a VPN, please disable it. VPN may prevent connecting to the Nintendo Switch.</string>
+
+    <!-- QR scanner instructions -->
+    <string name="how_to_connect">How to Connect</string>
+    <string name="step1_title">Select images/videos from your album</string>
+    <string name="step1_description">Open the Nintendo Switch album and select the content you want to share.</string>
+    <string name="step2_title">Select "Send to Smartphone"</string>
+    <string name="step2_description">Tap the send menu to display the QR code.</string>
+    <string name="step3_title">Scan the QR code</string>
+    <string name="step3_description">Once scanned, Wi-Fi connection and file transfer will start automatically.</string>
+
+    <!-- Share -->
+    <string name="share_all">Share All</string>
+    <string name="share">Share</string>
+
+    <!-- About screen -->
+    <string name="about">About</string>
+    <string name="version">Version %1$s (%2$d)</string>
+    <string name="app_description">Transfers screenshots and videos from your Nintendo Switch to your Android device via Wi-Fi.</string>
+    <string name="copyright" translatable="false">© 2026 AioiLight</string>
+    <string name="licenses_section">Open Source Software</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+</resources>

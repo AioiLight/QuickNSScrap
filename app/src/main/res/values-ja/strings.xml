@@ -1,0 +1,71 @@
+<resources>
+    <!-- Wi-Fi接続 -->
+    <string name="wifi_connect_failed">Wi-Fi に接続できませんでした</string>
+    <string name="connection_lost">接続が切断されました</string>
+    <string name="connecting_to">「%1$s」に接続中…</string>
+
+    <!-- エラー共通 -->
+    <string name="error_title">エラー</string>
+    <string name="retry">再試行</string>
+
+    <!-- QRスキャン画面 -->
+    <string name="scan_qr_prompt">Nintendo Switch の QR コードをスキャン</string>
+    <string name="camera_permission_required">カメラへのアクセス許可が必要です</string>
+    <string name="grant_permission">許可する</string>
+    <string name="settings">設定</string>
+
+    <!-- 転送画面 -->
+    <string name="fetch_file_list_failed">ファイル一覧の取得に失敗しました: %1$s</string>
+    <string name="fetching_file_list">ファイル一覧を取得中…</string>
+    <string name="file_count_video">%1$d 件の動画</string>
+    <string name="file_count_image">%1$d 件の画像</string>
+    <string name="download_all">すべてダウンロード</string>
+    <string name="back">もどる</string>
+    <string name="downloading_progress">ダウンロード中 (%1$d / %2$d)</string>
+    <string name="total_progress">全体: %1$d / %2$d</string>
+    <string name="done_title">完了</string>
+    <string name="saved_count">%1$d 件を保存しました</string>
+    <string name="close">閉じる</string>
+
+    <!-- 設定画面 -->
+    <string name="save_location">保存先</string>
+    <string name="organize_by_game">ゲーム別にフォルダ分け</string>
+    <string name="organize_by_game_description">ゲームタイトルごとにフォルダを作成して保存します。</string>
+    <string name="strip_id_from_filename">ファイル名からゲーム ID を削除</string>
+    <string name="strip_id_from_filename_description">データベースにゲームタイトルがある場合、ファイル名の先頭にあるゲーム ID を取り除いて保存します。</string>
+    <string name="game_database">ゲームデータベース</string>
+    <string name="last_updated">最終更新: %1$s</string>
+    <string name="not_downloaded">未ダウンロード</string>
+    <string name="download_failed">ダウンロードに失敗しました: %1$s</string>
+    <string name="download_database">データベースをダウンロード</string>
+    <string name="db_language">データベースの言語</string>
+    <string name="db_language_ja">日本語</string>
+    <string name="db_language_en">English</string>
+    <string name="game_db_help">・ゲーム名への変換には、事前にデータベースをダウンロードしておく必要があります。\n・新しいゲームでフォルダ分けされない場合は、再度ダウンロードしてください。\n・データベースにないタイトルはフォルダを作らずに保存されます。\n・データベースは大容量のため、Wi-Fi でのダウンロードを推奨します。</string>
+    <!-- 失敗 -->
+    <string name="failed_count">失敗: %1$d 件</string>
+    <string name="settings_save_failed">設定の保存に失敗しました</string>
+
+    <!-- VPN警告 -->
+    <string name="vpn_warning">VPN を使用している場合は無効にしてください。VPN が有効だと Nintendo Switch に接続できないことがあります。</string>
+
+    <!-- QRスキャン手順 -->
+    <string name="how_to_connect">接続方法</string>
+    <string name="step1_title">アルバムから画像・動画を選ぶ</string>
+    <string name="step1_description">Nintendo Switch 本体のアルバムを開き、共有したいコンテンツを選択します。</string>
+    <string name="step2_title">「スマートフォンに送る」を選択</string>
+    <string name="step2_description">送信メニューから QR コードを表示させます。</string>
+    <string name="step3_title">QR コードをスキャンする</string>
+    <string name="step3_description">読み取りが完了すると自動で Wi-Fi 接続・転送が始まります。</string>
+
+    <!-- 共有 -->
+    <string name="share_all">すべて共有</string>
+    <string name="share">共有</string>
+
+    <!-- アバウト画面 -->
+    <string name="about">このアプリについて</string>
+    <string name="version">バージョン %1$s (%2$d)</string>
+    <string name="app_description">Nintendo Switch のスクリーンショットやキャプチャを Wi-Fi 経由で Android に転送するアプリです。</string>
+    <string name="licenses_section">オープンソースソフトウェア</string>
+    <string name="open_source_licenses">オープンソースライセンス</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ダークモード起動時の白フラッシュを防ぐため windowBackground を暗くする -->
+    <!-- Material3 のダーク Surface 基準色 (#1C1B1F) に合わせている -->
+    <style name="Theme.QuickNSScrap" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#FF1C1B1F</item>
+    </style>
+</resources>
